@@ -1,0 +1,25 @@
+.ant-menu-item-selected {
+    background-color: #3b82f6 !important; 
+    color: white !important;
+  }
+  
+  .ant-menu-item:hover {
+    color: white !important; 
+  }
+
+  .ant-menu-item-customers {
+    color: #3b82f6 !important; 
+}
+
+.ant-menu-item-customers .anticon {
+    color: #3b82f6; 
+}
+.custom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px; 
+}
+.custom-content {
+    overflow: hidden; /* Prevent extra scrollbars */
+  }
+  
