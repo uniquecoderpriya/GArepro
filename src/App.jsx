@@ -1,19 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Navbar from './components/Navbar'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import React from 'react';
+import { Layout, theme } from 'antd';
+import 'tailwindcss/tailwind.css';
+import './style/App.scss';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Mainlayout from './components/Mainlayout';
 
-  return (
-    <>
-    <div>
-       <Navbar/>
-    </div>
-    </>
-  )
-}
+const App = () => {
+    const {
+        token: { colorBgContainer, borderRadiusLG },
+    } = theme.useToken();
 
-export default App
+    return (
+        <Layout className="app">
+            <Navbar />
+            <Layout className="app-content">
+                <Sidebar colorBgContainer={colorBgContainer} />
+                <Mainlayout colorBgContainer={colorBgContainer} borderRadiusLG={borderRadiusLG} />
+            </Layout>
+        </Layout>
+    );
+};
+
+export default App;

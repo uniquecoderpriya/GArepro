@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #1e40af; 
+  height: 64px; 
+  position: relative; 
+}
+
+.ga-logo {
+  height: 40px;
+  z-index: 10; 
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-menu {
+  flex: 1;
+  min-width: 0;
+  background: transparent; 
+}
+
+.navbar-avatar {
+  background-color: #ffffff; 
+}

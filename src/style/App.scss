@@ -1,0 +1,83 @@
+// src/style/App.scss
+.app {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-content {
+    display: flex;
+    height: calc(100vh - 64px);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 64px;
+}
+
+.ga-logo {
+    height: 40px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu {
+    flex: 1;
+    min-width: 0;
+}
+
+.navbar-avatar {
+    background-color: #fde3cf;
+    color: #f56a00;
+}
+
+.sidebar {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 64px);
+    overflow: auto;
+}
+
+.main-layout {
+    margin-left: 200px;
+    padding: 0 24px;
+    height: calc(100vh - 64px);
+    overflow: hidden;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 64px;
+    right: 24px;
+    z-index: 1;
+    background: var(--color-bg-container);
+    padding: 16px;
+    width: calc(100% - 224px); 
+}
+
+.search-input {
+    width: 300px;
+}
+
+.add-customer-btn {
+    border-radius: 4px;
+}
+
+.content {
+    padding: 96px 24px 24px;
+    margin: 0;
+    min-height: 280px;
+    background: var(--color-bg-container);
+    border-radius: var(--border-radius-lg);
+    overflow: auto;
+}

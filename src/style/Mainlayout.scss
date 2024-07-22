@@ -1,0 +1,31 @@
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 64px; 
+    z-index: 1;
+    background: var(--color-bg-container);
+    padding: 16px;
+    width: calc(100% - 24px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.search-input {
+    width: 300px;
+}
+
+.add-customer-btn {
+    border-radius: 4px;
+    background-color: #007bff; 
+    color: white;
+    border: none; 
+    padding: 8px 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-left: 50%;
+}
+
+.add-customer-btn:hover {
+    background-color: #0056b3; 
+}
