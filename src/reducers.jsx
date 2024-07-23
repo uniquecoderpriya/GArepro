@@ -24,8 +24,6 @@ const studentReducer = (state = initialState, action) => {
                 loading: false,
                 students: action.payload,
             };
-            console.log(response)
-            console.log('2nd call')
             return response;
         case FETCH_STUDENTS_FAILURE:
             return {

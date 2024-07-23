@@ -1,7 +1,6 @@
 import React from 'react';
 import { Avatar, Menu } from 'antd';
 import { BellOutlined } from '@ant-design/icons';
-import 'tailwindcss/tailwind.css';
 import '../style/nav.scss';
 
 const items = [
@@ -24,8 +23,8 @@ const items = [
 ];
 
 const Navbar = () => (
-    <header className="navbar bg-blue-500">
-        <div className="navbar-left flex items-center">
+    <header className="navbar">
+        <div className="navbar-left">
             <div className="demo-logo" />
             <Menu
                 mode="horizontal"
@@ -35,7 +34,7 @@ const Navbar = () => (
             />
         </div>
         <div className="flex items-center">
-            <BellOutlined className="text-white mr-4" style={{ fontSize: '20px' }} />
+            <BellOutlined className="text-white mr-4" />
             <Avatar className="navbar-avatar">U</Avatar>
             <span className="text-white ml-2">Rohit Supervisor</span>
         </div>

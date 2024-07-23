@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Menu } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
@@ -12,8 +11,8 @@ const items = [
     },
 ];
 
-const Sidebar = ({ colorBgContainer }) => (
-    <aside className="sidebar" style={{ background: colorBgContainer }}>
+const Sidebar = () => (
+    <aside className="sidebar">
         <Menu
             mode="inline"
             defaultSelectedKeys={['1']}

@@ -1,4 +1,19 @@
 
+.app-content {
+    display: flex;
+}
+
+.sidebar {
+    background: #f0f2f5; 
+   
+}
+
+.main-layout {
+    background: #f0f2f5; 
+    border-radius: 8px; 
+   
+}
+
 .app {
     height: 100vh;
     overflow: hidden;

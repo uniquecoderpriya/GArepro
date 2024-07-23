@@ -6,12 +6,30 @@
   background: #1e40af; 
   height: 64px; 
   position: relative; 
+  
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
 
 .ga-logo {
   height: 40px;
   z-index: 10; 
 }
+.text-white {
+  color: #ffffff;
+}
+
+.mr-4 {
+  margin-right: 1rem; 
+}
+
+.ml-2 {
+  margin-left: 0.5rem; 
+}
+
+
 
 .navbar-left {
   display: flex;
@@ -27,4 +45,17 @@
 
 .navbar-avatar {
   background-color: #ffffff; 
+}
+
+
+.navbar-avatar {
+  background-color: #1890ff; 
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
 }
