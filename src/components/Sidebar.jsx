@@ -2,7 +2,7 @@
 import React from 'react';
 import { Menu } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
-import '../style/Sidebar.scss';
+import '../style/sidebar.scss';
 
 const items = [
     {
