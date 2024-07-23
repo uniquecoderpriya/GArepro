@@ -2,7 +2,7 @@
 import React from 'react';
 import { Layout, theme } from 'antd';
 import 'tailwindcss/tailwind.css';
-import './style/App.scss';
+import './style/app.scss';
 import Navbar from './components/navbars.jsx';
 import Sidebar from './components/sidebar.jsx';
 import Mainlayout from './components/mainlayout.jsx';

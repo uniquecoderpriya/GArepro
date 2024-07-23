@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, Menu } from 'antd';
 import { BellOutlined } from '@ant-design/icons';
 import 'tailwindcss/tailwind.css';
-import '../style/Nav.scss';
+import '../style/nav.scss';
 
 const items = [
     {
