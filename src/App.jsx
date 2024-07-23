@@ -3,9 +3,9 @@ import React from 'react';
 import { Layout, theme } from 'antd';
 import 'tailwindcss/tailwind.css';
 import './style/App.scss';
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-import Mainlayout from './components/Mainlayout';
+import Navbar from './components/navbars.jsx';
+import Sidebar from './components/sidebar.jsx';
+import Mainlayout from './components/mainlayout.jsx';
 
 const App = () => {
     const {
