@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from 'antd';
-import './style/app.scss';
+import '../src/style/app.scss';
 import Navbar from './components/navbars';
 import Sidebar from './components/sidebar';
 import Mainlayout from './components/mainlayout';
