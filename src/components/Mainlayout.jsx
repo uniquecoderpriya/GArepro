@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Table, Button, Input, Layout } from 'antd';
 import { fetchStudents } from '../action'; 
+import { useNavigate } from 'react-router-dom';
 import '../style/mainlayout.scss';
 
 const { Content } = Layout;
@@ -9,6 +10,7 @@ const { Search } = Input;
 
 const Mainlayout = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const { students, loading, error } = useSelector((state) => state) || {};
     const [search, setSearch] = useState('');
 
@@ -63,6 +65,11 @@ const Mainlayout = () => {
         },
     ];
 
+
+    const handleAddStudent = () => {
+        navigate('/add-student'); 
+    };
+
     return (
         <Layout className="main-layout">
             <div className="search-container">
@@ -73,7 +80,7 @@ const Mainlayout = () => {
                     value={search}
                     className="search-input"
                 />
-                <Button className="add-customer-btn">
+                 <Button className="add-customer-btn" onClick={handleAddStudent}>
                     + Add Student
                 </Button>
             </div>
