@@ -1,6 +1,7 @@
 import React from 'react';
-import { Menu } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { Menu, Button } from 'antd';
+import { UserOutlined, LogoutOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 import '../style/sidebar.scss';
 
 const items = [
@@ -11,16 +12,32 @@ const items = [
     },
 ];
 
-const Sidebar = () => (
-    <aside className="sidebar">
-        <Menu
-            mode="inline"
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
-            className="sidebar-menu"
-            items={items}
-        />
-    </aside>
-);
+const Sidebar = () => {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        navigate('/');
+    };
+
+    return (
+        <aside className="sidebar">
+            <Menu
+                mode="inline"
+                defaultSelectedKeys={['1']}
+                defaultOpenKeys={['sub1']}
+                className="sidebar-menu"
+                items={items}
+            />
+            <Button
+                type="text"
+                icon={<LogoutOutlined />}
+                className="logout-button"
+                onClick={handleLogout}
+            >
+                Logout
+            </Button>
+        </aside>
+    );
+};
 
 export default Sidebar;

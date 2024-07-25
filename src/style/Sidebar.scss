@@ -8,6 +8,21 @@
     overflow: auto;
 }
 
+.logout-button {
+    position: absolute;
+    bottom: 25px; 
+    left: 4px; 
+    width: 100%; 
+    text-align: right;
+    border: none;
+    background: transparent;
+    color: #ff4d4f; 
+    font-weight: bold;
+  }
+
+  .logout-button:hover {
+    color: #ff7875; 
+  }
 .sidebar-menu {
     height: 100%;
     border-right: 0;

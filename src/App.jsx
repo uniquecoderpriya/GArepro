@@ -5,7 +5,8 @@ import '../src/style/app.scss';
 import Navbar from './components/navbars';
 import Sidebar from './components/sidebar';
 import Mainlayout from './components/mainlayout';
-import AddStudentForm from './pages/form '; 
+import AddStudentForm from './pages/form ';
+import LoginForm from './pages/login';
 
 const App = () => {
     return (
@@ -15,7 +16,8 @@ const App = () => {
                 <Layout className="app-content">
                     <Sidebar />
                     <Routes>
-                        <Route path="/" element={<Mainlayout />} />
+                        <Route path="/" element={<LoginForm />} /> 
+                        <Route path="/home" element={<Mainlayout />} /> 
                         <Route path="/add-student" element={<AddStudentForm />} />
                     </Routes>
                 </Layout>
